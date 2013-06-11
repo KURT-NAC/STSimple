@@ -1,0 +1,14 @@
+{
+    "ratingObject":
+    {
+        "id": "Rating Object",
+        "elements":
+        {
+            "starBG1":{"id":"starGrey", "x":0, "y":0, "regX":0, "regY":0, "rotRegX":0.5, "rotRegY":0.5, "rotation":0, "width":-1,  "height":-1},
+            "starBG2":{"id":"starGrey", "x":64, "y":0, "regX":0, "regY":0, "rotRegX":0.5, "rotRegY":0.5, "rotation":0, "width":-1,  "height":-1},
+            "starBG3":{"id":"starGrey", "x":128, "y":0, "regX":0, "regY":0, "rotRegX":0.5, "rotRegY":0.5, "rotation":0, "width":-1,  "height":-1},
+            "starBG4":{"id":"starGrey", "x":192, "y":0, "regX":0, "regY":0, "rotRegX":0.5, "rotRegY":0.5, "rotation":0, "width":-1,  "height":-1},
+            "starBG5":{"id":"starGrey", "x":256, "y":0, "regX":0, "regY":0, "rotRegX":0.5, "rotRegY":0.5, "rotation":0, "width":-1,  "height":-1}
+        }
+    }
+}

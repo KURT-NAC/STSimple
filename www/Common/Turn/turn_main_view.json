@@ -1,0 +1,15 @@
+{
+    "turn":
+    {
+        "id":"Turn",
+        "elements":
+        {
+            "bg": {"id":"turnBG", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "num1":{"id":"numberSheet", "x":340, "y":480, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+            "num2":{"id":"numberSheet", "x":470, "y":445, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+            "num3":{"id":"numberSheet", "x":600, "y":480, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+            "num1a":{"id":"numberSheet", "x":400, "y":460, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+            "num2a":{"id":"numberSheet", "x":570, "y":430, "width":-1,  "height":-1, "regX":0.5, "regY":0.5}
+        }
+    }
+}

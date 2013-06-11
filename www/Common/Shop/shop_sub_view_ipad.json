@@ -1,0 +1,13 @@
+{
+    "shop":
+    {
+        "id":"Shop",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":0, "y":899, "width":-1, "height":-1 },
+            "back":   {"id":"navigationButton", "x":384, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    }
+}
+

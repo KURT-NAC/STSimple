@@ -1,0 +1,16 @@
+{
+    "feedbackObject":
+    {
+        "id": "Feedback Object",
+        "elements":
+        {
+            "username":{"id":"username", "x":225, "y":15, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"bottom" },
+            "userBkgd":{"id":"thumbBlack", "x":105, "y":105, "regX":0.5, "regY":0.5, "width":-1,  "height":-1},
+            "userPort":{"id":"thumbDefault", "x":105, "y":105, "regX":0.5, "regY":0.5, "width":-1, "height":-1},
+            "userWordballoon":{"id":"wordBalloon", "x":470, "y":140, "regX":0.5, "regY":0.5, "width":-1, "height":-1},
+            "balloonRegion":{"id":"balloonRegion", "x":497, "y":130, "regX":0.5, "regY":0.5, "width":420, "height":140},
+            "awardBg": {"id":"awardIconBkgd", "x":5, "y":105, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "award":{"id":"awardsPlaceholder", "x":5, "y":105, "regX":0.5, "regY":0.5, "width":92,  "height":115}
+        }
+    }
+}

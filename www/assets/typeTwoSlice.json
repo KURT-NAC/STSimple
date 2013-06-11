@@ -1,0 +1,38 @@
+{
+    "bar_press": {
+        "x": 287,
+        "y": 0,
+        "width":  201,
+        "height": 118
+    },
+    "bar": {
+        "x": 287,
+        "y": 118,
+        "width":  201,
+        "height": 118
+    },
+    "cap_left": {
+        "x": 0,
+        "y": 236,
+        "width":  131,
+        "height": 118
+    },
+    "cap_left_press": {
+        "x": 131,
+        "y": 236,
+        "width":  131,
+        "height": 118
+    },
+    "cap_right_press": {
+        "x": 0,
+        "y": 0,
+        "width":  287,
+        "height": 118
+    },
+    "cap_right": {
+        "x": 0,
+        "y": 118,
+        "width":  287,
+        "height": 118
+    }
+}

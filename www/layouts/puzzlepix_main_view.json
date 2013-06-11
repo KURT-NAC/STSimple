@@ -1,0 +1,360 @@
+{
+    "id":           "main",
+    "viewX":        0,
+    "viewY":        0,
+    "viewWidth":    768,
+    "viewHeight":   920,
+
+    "universalElements":
+    {
+        "stdButtonDefaults": {"id":"Required for auto-layout of Fancy Button and derived types",
+                                "img":"sliceSprite", "map":"sliceMap", "cap_left":"cap_left", "bar":"bar", "cap_right":"cap_right", "adjust":2.0 },
+        "balloonTextDefaults":{"id":"For filling roundup word balloon", "x":0, "y":0, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+        "fbShareData": { "name":"Jigsawesome", "caption":"www.funtini.com", "description":"Create fun jigsaw puzzles from your own pictures!",
+                            "link":"http://apps.facebook.com/puzzlepixtest/", "picture":"http://api.funcini.com/facebook/puzzlepix/assets/cutouts/Jigsaw_icon.png" },
+        "fbInviteData": { "title":"Play Jigsawesome!", "message":"Come join the fun!" },
+        "fbNudgeData": { "title":"Remind %s to Play", "message":"Make your move in Jigsawesome!" }
+    },
+
+    "pages":
+    {
+        "intro":
+        {
+            "id": "Intro",
+            "elements" :
+            {
+                "el": {"id":"name", "x":0, "y":0, "width":-1, "height":-1 }
+            }
+        },
+
+        "login":
+        {
+            "id" : "Login",
+            "elements":
+            {
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":105, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+                "title":      {"id":"Login", "x":384, "y":120, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "activeGames":
+        {
+            "id": "Active Games",
+            "elements":
+            {
+                "yourMoveText": {"id":"Your Move", "x":384, "y":167, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "theirMoveText": {"id":"Their Move", "x":384, "y":30, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "createGame":
+        {
+            "id": "Create Game",
+            "elements":
+            {
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":70, "regX":0.5, "width":-1,  "height":-1 },
+                "title":      {"id":"Create Game", "x":384, "y":88, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "titleSub1":  {"id":"How Do You Want To", "x":384, "y":150, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "titleSub2":  {"id":"Find Your Opponent", "x":384, "y":175, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "fbTitle":  {"id":"Facebook Friends", "x":384, "y":98, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "roundup":
+        {
+            "id":"Round Up",
+            "elements":
+            {
+                "coinBkgd":{"id":"coinBkgd", "x":384, "y":420, "width":-1,  "height":-1, "regX":0.5},
+                "midBar":{"id":"completeMidbar", "x":0, "y":180, "width":-1,  "height":-1},
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":91, "regX":0.5, "width":-1,  "height":-1 },
+                "title1":{"id":"Your Puzzle", "x":384, "y":102, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "title2":{"id":"Was Completed", "x":384, "y":130, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "feedback":{"id":"feedbackObject", "x":384, "y":215, "regX":0.5, "regY":0, "width":-1,  "height":-1},
+                "earned":{"id":"youEarned", "x":384, "y":830, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin3":{"id":"largeCoin", "x":554, "y":645, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin2":{"id":"largeCoin", "x":384, "y":645, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin1":{"id":"largeCoin", "x":214, "y":645, "width":-1,  "height":-1, "regX":0.5, "regY":0.5}
+            }
+        },
+
+        "puzzleSolve":
+        {
+            "id": "Puzzle Solve",
+            "elements":
+            {
+                "picHint" : {"id":"userPicture", "x":384, "y":425 },
+                "iscorrect": {"id":"correct", "x":384, "y":297, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "streakBonusImage": {"id":"streakBonus", "regX":0.5, "regY":0.5, "x":384, "y":452, "width":-1, "height":-1},
+                "streakBonusCount": {"id":"0", "x":295, "y":465, "font":"48px PosterCopy", "fill":"#227568", "textAlign":"center", "textBaseline":"center" },
+                "timeBonusImage": {"id":"timeBonus", "regX":0, "regY":0, "x":0, "y":68, "width":-1, "height":-1},
+                "timeBonusCount": {"id":"timeBonusCount", "type": "text", "x":55, "y":128, "font":"36px PosterCopy", "fill":"#227568", "textAlign":"center", "textBaseline":"center" },
+                "timeBonusText": {"id":"timeBonusText", "type": "text", "text": "Time", "x":95, "y":115, "font":"25px PosterCopy", "fill":"#227568", "textAlign":"left", "textBaseline":"center" },
+                "timeBonusText2": {"id":"timeBonusText2", "type": "text", "text": "Bonus", "x":95, "y":135, "font":"25px PosterCopy", "fill":"#227568", "textAlign":"left", "textBaseline":"center" },
+                "fullStreakImage": {"id":"fullStreak", "regX":0.5, "regY":0.5, "x":384, "y":452, "width":-1, "height":-1}
+            }
+        },
+
+        "correctGuess":
+        {
+            "id": "Correct Guess",
+            "elements":
+            {
+                "topBar":{"id":"topDarkener", "x":0, "y":85, "width":-1,  "height":-1},
+                "break": {"id":"footerBreak", "x":0, "y":308, "width":-1, "height":-1 },
+                "coinBkgd":{"id":"coinBkgd", "x":384, "y":325, "width":-1,  "height":-1, "regX":0.5},
+                "awesome":{"id":"awesomeStarburst", "x":384, "y":240, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "earned":{"id":"youEarned", "x":384, "y":712, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin3":{"id":"largeCoin", "x":554, "y":525, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin2":{"id":"largeCoin", "x":384, "y":525, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "coin1":{"id":"largeCoin", "x":214, "y":525, "width":-1,  "height":-1, "regX":0.5, "regY":0.5},
+                "comment": {"id":"textFieldObject", "x":384, "y":830, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 }
+            }
+        },
+
+        "recordClip":
+        {
+            "id": "Record Clip",
+            "elements":
+            {
+                "loading":      {"id":"Loading, please wait.", "x":384, "y":512, "textAlign":"center", "textBaseline":"top" },
+                "titleBG":      {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+                "break":        {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+                "titleBanner":  {"id":"bannerLarge", "x":200, "y":145, "width":-1,  "height":-1 },
+                "titleText":    {"id":"PHOTO SOURCE", "x":384, "y":162, "width":-1, "height":-1, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "cameraBtn":    {"id":"cameraBtn", "x":50, "y":405, "width":269, "height":269 },
+                "cameraBanner": {"id":"banner", "x":180, "y":675, "regX":0.5, "width":-1,  "height":-1 },
+                "cameraText":   {"id":"TAKE A PHOTO", "x":180, "y":692, "width":-1,  "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "libraryBtn":    {"id":"libraryBtn", "x":450, "y":405, "width":269, "height":269 },
+                "libraryBanner": {"id":"banner", "x":580, "y":675, "regX":0.5, "width":-1,  "height":-1 },
+                "libraryText":   {"id":"FROM LIBRARY", "x":580, "y":692, "width":-1,  "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "createGameUsername":
+        {
+            "id":"Create Game Username",
+            "elements":
+            {
+                "title":      {"id":"Enter Username", "x":384, "y":135, "font":"36px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "createGameEmail":
+        {
+            "id":"Create Game Email",
+            "elements":
+            {
+                "title":      {"id":"Enter Email", "x":384, "y":130, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" }
+            }
+        },
+
+        "shop":
+        {
+            "id": "Shop",
+            "elements":
+            {
+                "storeBanner": {"id":"bannerLarge", "x":384, "y":106, "regX":0.5, "width":-1,  "height":-1 }
+            }
+        },
+
+        "loadingDialog":
+        {
+            "id": "Loading Dialog",
+            "elements":
+            {
+                "drop": {"id":"blackSquare", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1, "alpha":0.75 },
+                "spinner": {"id":"loadingIcon", "x":0, "y":-42, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "title": {"id":"Title", "x":0, "y":48, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" }
+            }
+        },
+
+        "genericDialog":
+        {
+            "id": "Generic Dialog",
+            "elements":
+            {
+                "title": {"id":"Title", "x":384, "y":500, "font":"48px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" },
+                "okBtn": {"id":"navigationButton", "x":520, "y":760, "regX":0.5, "regY":0.5, "width":240, "height":-1, "text":"Ok",
+                    "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                    "decoration": {"iconName":"checkbox", "element":{"textPos":90, "iconPos":170}}},
+                "cancelBtn": {"id":"navigationButton", "x":248, "y":760, "regX":0.5, "regY":0.5, "width":240, "height":-1, "text":"Cancel",
+                    "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                    "decoration": {"iconName":"noIcon", "element":{"textPos":90, "iconPos":170}}}
+            }
+        },
+
+
+        "summary" :
+        {
+            "id" : "Summary Page",
+            "elements":
+            {
+                "background": {"id":"background","img":"summaryBackground", "x":0, "y":66, "width":-1, "height":-1},
+                "picture" : {"id":"picture", "x":160, "y":217, "width":291, "height":276 },
+                "completedA" : {"text":"Your Puzzle", "x":560, "y":120, "regX":0.5, "regY":0.5, "rotRegX":0.5, "rotRegY":0.5, "rotation":-9, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+                "completedB" : {"text":"Was Completed", "x":570, "y":144, "regX":0.5, "regY":0.5, "rotRegX":0.5, "rotRegY":0.5, "rotation":-9, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+
+                "myPicFrame": { "img":"thumbFrame", "x":365, "y":245, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+                "myPic": { "img":"thumbDefaultSmall", "x":365, "y":245, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+                "myNameFirst": {"text":"Dummy",  "x":398, "y":235, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "myNameLast":  {"text":"Player", "x":398, "y":255, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "myDiff" : {"text":"Diff", "x":620, "y":223, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "myTime" : {"text":"Time", "x":620, "y":265, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "myTimer":{ "id":"timerMe", "type":"timerActor", "img":"timeMe_background", "x":670, "y":265, "width":-1, "height":-1, "regX":0, "regY":0.5, "font":"24px PosterCopy","fill":"white"},
+
+                "oppPicFrame": { "img":"thumbFrame", "x":365, "y":328, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+                "oppPic": { "img":"thumbDefaultSmall", "x":365, "y":328, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+                "oppNameFirst": {"text":"Dummy",  "x":398, "y":318, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "oppNameLast":  {"text":"Player", "x":398, "y":338, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "oppDiff" : {"text":"Diff", "x":620, "y":306, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "oppTime" : {"text":"Time", "x":620, "y":348, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "oppTimer":{ "id":"timerMe", "type":"timerActor", "img":"timeOpp_background", "x":670, "y":348, "width":-1, "height":-1, "regX":0, "regY":0.5, "font":"24px PosterCopy","fill":"white"},
+
+                "commentEnter": { "type":"textFieldObject", "x":384, "y":747, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "feedback":{"id":"feedbackObject", "x":384, "y":825, "regX":0.5, "regY":0.5, "width":-1, "height":-1, "scale":0.85 },
+
+                "shareBkg" : {"img":"sendLowBar", "x":0, "y":790, "width":-1, "height":-1},
+                "shareBanner" : {"img":"shareBanner", "x":386, "y":848, "regX":0.5, "regY":0.5 },
+                "socialObj": { "type":"socialObject", "x":384, "y":848, "regX":0.5, "regY":0.5, "iconFactor":1.5, "labels":false, "items":[0,2,3] },
+                "shareTxt" : {"text":"Share", "x":20, "y":830, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "thisTxt": {"text":"This", "x":20, "y":850, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "puzzleTxt": {"text":"Puzzle", "x":20, "y":870, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+
+                "coinParams" :  { "img":"largeCoin", "maxCoins":10, "minOff":0.5, "maxOff":0.15, "badgeOff":0.75 },
+                "pieceParams" :  { "rot":9, "pieceOff":170, "badgeOffX":0.85, "badgeOffY":-20 },
+                "coinArea" : { "x":384,"y":550}
+            }
+        },
+
+        "difficulty" :
+        {
+            "id" : "Difficulty Selection Page",
+            "elements":
+            {
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":85, "regX":0.5, "width":-1,  "height":-1 },
+                "title":      {"id":"Puzzle Size", "x":384, "y":100, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+
+                "easyBackground" : { "id":"storeItemBG", "regX":0.5, "regY":0.5, "x":384, "y":260, "width":-1, "height":-1 },
+                "mediumBackground" : { "id":"storeItemBG", "regX":0.5, "regY":0.5, "x":384, "y":430, "width":-1, "height":-1 },
+                "hardBackground" : { "id":"storeItemBG", "regX":0.5, "regY":0.5, "x":384, "y":600, "width":-1, "height":-1 },
+                "crazyBackground":{ "id":"storeItemBG", "regX":0.5, "regY":0.5, "x":384, "y":770, "width":-1, "height":-1 }
+            }
+        },
+
+        "difficultyDynamic" :
+        {
+            "id" : "Difficulty Buttons",
+            "elements":
+            {
+                "buttonTemplate" : {
+                    "id":"difficultyBtn", "type":"fancyButton",
+                    "regX":0.5, "regY":0.5,
+                    "x":384, "y":0, "width":-1, "height":-1, "adjust":-2,
+                    "orientation":"horizontal", "textAlign" : "left", "font" : "24px PosterCopy",
+                    "mainTextPos": 150,
+                    "config":{
+                        "text" : "XX\nPiece\nPuzzle",
+                        "buttonImage":"buttonType1SliceExt",
+                        "map":"typeOneMapExt"
+                    },
+                    "addImages":[
+                        {"id":"puzzleIcon", "pos":100, "centered":true},
+                        {"id":"thumbFrame", "pos":545, "centered":true},
+                        {"id":"thumbDefaultSmall", "pos":545, "centered":true},
+                        {"id":"coinIco", "pos":470, "centered":true},
+                        {"id":"coinIco", "pos":450, "centered":true},
+                        {"id":"coinIco", "pos":430, "centered":true},
+                        {"id":"coinIco", "pos":410, "centered":true},
+                        {"id":"coinIco", "pos":390, "centered":true}
+                    ]
+                },
+
+
+                "timeBkgd":     { "id":"timeBkgd", "regX":0.5, "regY":0.5, "x":560, "y":63, "width":-1, "height":-1 },
+                "timeLabel":    { "id":"Time", "x":493, "y":63, "font":"24px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+                "timer":        { "id":"timer", "type":"timerActor", "img":"timeOpp_background", "x":540, "y":63, "width":-1, "height":-1, "regX":0, "regY":0.5, "font":"24px PosterCopy","fill":"black"}
+            }
+        },
+
+        "stockPhotos":
+        {
+            "id":"Stock Photos",
+            "elements":
+            {
+                "bg":          {"id":"background", "x":384, "y":0, "regX":0.5, "width":768, "height":1024 },
+                "break":       {"id":"footerBreak", "x":0, "y":196, "width":-1, "height":-1 },
+                "scroll":      {"id":"scroll",   "x":0, "y":200,  "width":768,  "height":700 },
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":88, "regX":0.5, "width":-1,  "height":-1 },
+                "title":       {"id":"Stock Puzzles", "x":384, "y":110, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "stockButton":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "textAlign":"left", "font":"28px PosterCopy", "mainTextPos":280, "adjust":-1,
+                    "config":{"backgroundImg":"stockPhotoBG", "buttonImage":"buttonType1SliceExt", "map":"typeOneMapExt", "text":"Category"},
+                    "addImages":[
+                        {"id":"stockRound", "pos":180, "centered":true},
+                        {"id":"stockIcon", "pos":180, "centered":true},
+                        {"id":"coinMed", "pos":610, "centered":true},
+                        {"id":"checkbox", "pos":610, "centered":true}
+                    ],
+                    "addText":[
+                        {"id":"###", "pos":520, "font":"28px PosterCopy", "fill":"white", "align":"center" }
+                    ]},
+                "stockButtonLocked":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "textAlign":"left", "font":"28px PosterCopy", "mainTextPos":280, "adjust":-1,
+                    "config":{"backgroundImg":"stockPhotoBG", "buttonImage":"buttonType1SliceExtGrey", "map":"typeOneMapExtGrey", "text":"Category"},
+                    "addImages":[
+                        {"id":"stockRoundGrey", "pos":180, "centered":true},
+                        {"id":"stockIcon", "pos":180, "centered":true},
+                        {"id":"stockRoundDimmer", "pos":180, "centered":true},
+                        {"id":"lockIcon", "pos":180, "centered":true},
+                        {"id":"energyIcon", "pos":610, "centered":true}
+                    ],
+                    "addText":[
+                        {"id":"###", "pos":520, "font":"28px PosterCopy", "fill":"white", "align":"center" }
+                    ]}
+            }
+        },
+
+        "slidePuzzle":
+        {
+            "id": "Slide Puzzle",
+            "elements":
+            {
+                "bg": {"id":"slideBkgd1", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 }
+            }
+        },
+
+        "chooseStock":
+        {
+            "id": "Choose Stock",
+            "elements":
+            {
+                "bg":          {"id":"background", "x":384, "y":0, "regX":0.5, "width":768, "height":1024 },
+                "titleBanner": {"id":"bannerLarge", "x":384, "y":88, "regX":0.5, "width":-1,  "height":-1 },
+                "title":       {"id":"Choose a Photo", "x":384, "y":110, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "category":    {"id":"Category", "x":384, "y":170, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+                "coverFlowBG": {"id":"sendLowBar", "x":384, "y":420, "regX":0.5, "width":-1, "height":540 },
+                "image1":      {"id":"coverFlowIsland1", "x":-90, "y":545, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "image2":      {"id":"coverFlowIsland1", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "image3":      {"id":"coverFlowIsland1", "x":860, "y":545, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+                "backward":    {"id":"coverFlowBackward", "x":0, "y":545, "regX":0, "regY":0.5, "width":-1, "height":-1 },
+                "forward":     {"id":"coverFlowForward", "x":768, "y":545, "regX":1, "regY":0.5, "width":-1, "height":-1 },
+                "takeBtn":     {"id":"takeBtn", "type":"navigationButton", "x":384, "y":825, "regX":0.5, "regY":0.5, "width":230, "height":-1,
+                    "text":"Take\na Photo", "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                    "decoration": {"iconName":"smallCamera", "element":{"textPos":140, "iconPos":40}}}
+
+            }
+        },
+
+        "topBar":
+        {
+            "id": "Top Bar",
+            "elements":
+            {
+                "timerBar":{"id":"timerBar", "x":138, "y":-1, "width":-1, "height":-1, "dockGroup":"left"},
+                "timerMe":{ "id":"timerMe", "type":"timerActor", "img":"timeMe_background", "x":145, "y":2, "width":-1, "height":-1, "font":"24px PosterCopy","fill":"white", "dockGroup":"left"},
+                "timerOpp":{ "id":"timerOpp", "type":"timerActor", "img":"timeOpp_background", "x":145, "y":34, "width":-1, "height":-1, "font":"24px PosterCopy","fill":"white", "dockGroup":"left"},
+                "timeBonus":{"id":"timeBonus", "type":"progressBar", "x":4, "y":5, "width":-1, "height":-1, "config": {"full":"timeBonusFull", "empty":"timeBonusEmpty"}},
+                "timeBonusLabel":{"id":"timeBonusLabel", "type":"text", "text":"Time Bonus", "x":71, "y":55, "width":-1, "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center"}
+            }
+        }
+    }
+}

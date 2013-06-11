@@ -1,0 +1,54 @@
+{
+    "createGame":
+    {
+        "id":"Create Game",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "back1": {"id":"navigationButton", "x":888, "y":100, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}},
+            "back2": {"id":"navigationButton", "x":888, "y":200, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}},
+            "play":   {"id":"toggleButton", "x":888, "y":300, "regX":0.5, "regY":0.5, "width":200, "height":-1, "mainTextPos":100,
+                "config":{"buttonImage":"sliceSprite", "text":"Play", "orientation":"horizontal", "map":"sliceMap" } },
+            "invite":   {"id":"toggleButton", "x":888, "y":400, "regX":0.5, "regY":0.5, "width":200, "height":-1, "mainTextPos":100,
+                "config":{"buttonImage":"sliceSprite", "text":"Invite", "orientation":"horizontal", "map":"sliceMap" } },
+            "share": {"id":"navigationButton", "x":888, "y":500, "regX":0.5, "regY":0.5, "width":200, "height":-1, "text":"Share", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"shareIcon", "element":{"textPos":40, "iconPos":20}}}
+        }
+    },
+
+    "createGameUsrename":
+    {
+        "id":"Create Game Username",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "back": {"id":"back", "type":"navigationButton", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    },
+
+    "createGameEmail":
+    {
+        "id":"Create Game Email",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "back": {"id":"back", "type":"navigationButton", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    },
+
+    "inviteGameEmail":
+    {
+        "id":"Invite Game Email",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "back": {"id":"back", "type":"navigationButton", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    }
+}
+

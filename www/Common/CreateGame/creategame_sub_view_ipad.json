@@ -1,0 +1,54 @@
+{
+    "createGame":
+    {
+        "id":"Create Game",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":0, "y":899, "width":-1, "height":-1 },
+            "back1": {"id":"navigationButton", "x":384, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}},
+            "back2": {"id":"navigationButton", "x":105, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}},
+            "play":   {"id":"toggleButton", "x":384, "y":965, "regX":1, "regY":0.5, "width":-1, "height":-1, "mainTextPos":105,
+                "config":{"buttonImage":"toggleButton", "text":"Play", "orientation":"horizontal" } },
+            "invite":   {"id":"toggleButton", "x":384, "y":965, "regX":0, "regY":0.5, "width":-1, "height":-1, "mainTextPos":75,
+                "config":{"buttonImage":"toggleButton", "text":"Invite", "orientation":"horizontal" } },
+            "share": {"id":"navigationButton", "x":665, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Share", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"shareIcon", "element":{"textPos":40, "iconPos":20}}}
+        }
+    },
+
+    "createGameUsername":
+    {
+        "id":"Create Game Username",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":0, "y":899, "width":-1, "height":-1 },
+            "back": {"id":"back", "type":"navigationButton", "x":384, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    },
+
+    "createGameEmail":
+    {
+        "id":"Create Game Email",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":0, "y":899, "width":-1, "height":-1 },
+            "back": {"id":"back", "type":"navigationButton", "x":384, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    },
+
+    "inviteGameEmail":
+    {
+        "id":"Invite Game Email",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":0, "y":899, "width":-1, "height":-1 },
+            "back": {"id":"back", "type":"navigationButton", "x":384, "y":965, "regX":0.5, "regY":0.5, "width":166, "height":-1, "text":"Back", "orientation":"vertical", "adjust":0,
+                "decoration": {"iconName":"backIcon", "element":{"textPos":40, "iconPos":22}}}
+        }
+    }
+}
+

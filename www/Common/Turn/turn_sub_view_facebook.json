@@ -1,0 +1,13 @@
+{
+    "turn":
+    {
+        "id": "Turn",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "goBtn": {"id":"navigationButton", "x":888, "y":100, "width":-1, "height":-1, "regX":0.5, "regY":0.5, "text":"Go", "orientation":"horizontal", "adjust":0,
+                "decoration": {"iconName":"checkbox", "element":{"textPos":97, "iconPos":147}}}
+        }
+    }
+}
+

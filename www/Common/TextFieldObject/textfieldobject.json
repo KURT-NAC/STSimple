@@ -1,0 +1,10 @@
+{
+    "textFieldObject":
+    {
+        "id" : "Text Field Object",
+        "elements":
+        {
+            "input": { "id":"tweaks", "x1":13, "y1":13, "x2":50, "y2":35, "font":"font-family: ArialNarrowBold, serif; font-size:32px;" }
+        }
+    }
+}

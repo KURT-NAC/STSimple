@@ -1,0 +1,27 @@
+{
+    "activeGames":
+    {
+        "id":"Active Games",
+        "elements":
+        {
+            "footer": {"id":"footer", "x":888, "y":452, "regX":0.5, "regY":0.5, "width":240, "height":904},
+            "awardsButton":   {"type":"fancyButton", "id":"awardsButton", "x":888, "y":100, "regX":0.5, "regY":0.5, "width":-1, "height":-1, "dockGroup":"left",
+                "orientation":"horizontal", "mainTextPos":285, "font":"28px PosterCopy", "adjust":12,
+                "textStyle":{ "align":"center", "baseline":"middle", "fill":"white"},
+                "config":{ "buttonImage":"awardsButton", "normalIdx":0, "pressIdx":1, "text":""},
+                "addImages":[
+                    {"id":"awardsIcon", "pos":50, "centered":true, "adjust":-12 }
+                ]},
+            "storeButton":   {"type":"fancyButton", "id":"storeButton", "x":888, "y":200, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "orientation":"horizontal", "mainTextPos":85, "font":"28px PosterCopy", "adjust":12,
+                "textStyle":{ "align":"center", "baseline":"middle", "fill":"white"},
+                "config":{ "buttonImage":"storeButton", "normalIdx":0, "pressIdx":1, "text":"Store"},
+                "addImages":[
+                    {"id":"coinPlus", "pos":155, "centered":true, "adjust":-15 }
+                ]},
+            "editToggle":   {"type":"toggleButton", "id":"editToggle", "x":888, "y":300, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "config":{"buttonImage":"editToggle", "orientation":"horizontal", "swipe":true } }
+        }
+    }
+}
+

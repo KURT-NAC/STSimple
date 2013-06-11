@@ -1,0 +1,38 @@
+{
+    "settingsDialog":
+    {
+        "id": "Settings Dialog",
+        "elements":
+        {
+            "drop": {"id":"blackSquare", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":768, "height":1024, "alpha":1.00 },
+            "bg": {"id":"settingsBG", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "title": {"id":"Settings", "x":384, "y":315, "font":"44px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" },
+
+            "iconSound": {"id":"iconSound", "x":150, "y":390, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "iconCheck": {"id":"iconCheck", "x":150, "y":470, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "iconFacebook": {"id":"iconFacebook", "x":165, "y":645, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+
+            "sfxLabel": {"id":"Sound Effects", "x":450, "y":390, "font":"28px PosterCopy", "fill":"white", "textAlign":"right", "textBaseline":"middle" },
+            "sfxToggle": {"type":"toggleButton", "id":"mute", "x":555, "y":390, "regX":0, "regY":0.5, "width":-1, "height":-1,
+                "config":{"buttonImage":"btnTick", "orientation":"horizontal", "swipe":true, "clickAudioID":"nuthing" } },
+
+            "optInLabel1": {"id":"Share my flicks", "x":370, "y":457, "font":"28px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+            "optInLabel2": {"id":"with all players", "x":370, "y":488, "font":"28px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+
+            "optInToggle": {"type":"toggleButton", "id":"optIn", "x":555, "y":475, "regX":0, "regY":0.5, "width":-1, "height":-1,
+                "config":{"buttonImage":"btnTick", "orientation":"horizontal", "swipe":true } },
+
+            "logoutLabel": {"id":"Logout", "x":315, "y":640, "font":"28px PosterCopy", "fill":"white", "textAlign":"left", "textBaseline":"middle" },
+            "logoutBtn": { "id":"fancyButton", "x":545, "y":640, "regX":0, "regY":0.5, "width":-1, "height":-1,
+                "config":{ "buttonImage":"logoutFBBtn", "normalIdx":0, "pressIdx":1},
+                "addText":[
+                    {"id":"logout", "pos":520, "font":"16px PosterCopy", "fill":"white", "align":"center" }
+                ]
+            },
+            "okBtn": {"id":"navigationButton", "x":384, "y":740, "regX":0.5, "regY":0.5, "width":200, "height":-1, "text":"Done",
+                "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                "decoration": {"iconName":"checkbox", "element":{"textPos":75, "iconPos":130}}},
+            "version": {"id":"version", "x":620, "y":807, "font":"20px PosterCopy", "fill":"white", "textAlign":"right", "textBaseline":"middle" }
+        }
+    }
+}

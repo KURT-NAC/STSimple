@@ -1,0 +1,12 @@
+{
+    "socialObject":
+    {
+        "id": "Social Object",
+        "elements":
+        {
+            "socialTextDef": {"id":"text", "x":0, "y":0, "width":-1,  "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "socialIcons" :  [ "socialFacebook", "socialYouTube", "socialTwitter", "socialSave" ],
+            "socialLabels" : [ "Facebook", "You Tube", "Twitter", "Save" ]
+        }
+    }
+}

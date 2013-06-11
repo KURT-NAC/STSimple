@@ -1,0 +1,26 @@
+{
+    "awards":
+    {
+        "id":"Awards Screen",
+        "elements":
+        {
+            "awardsBg": {"id":"awardsBkgd", "x":0, "y":0, "regX":0, "regY":0, "width":-1, "height":-1 },
+            "awardsLogo": {"id":"awardsLogo", "x":160, "y":165, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "awardsOrangeSlots": {"id":"awardsOrangeSlots", "x":452, "y":170, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "awardsBlueSlots1": {"id":"awardsBlueSlots", "x":384, "y":376, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "awardsBlueSlots2": {"id":"awardsBlueSlots", "x":384, "y":571, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "awardsBlueSlots3": {"id":"awardsBlueSlots", "x":384, "y":766, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "templateOrange" : {"id":"awardsPlaceholder", "x":315, "y":155, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "incrX":140, "cols":3, "scaleX":0.4, "scaleY":0.4 },
+            "templateBlue" : {"id":"awardsPlaceholder", "x":178, "y":361, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "incrX":140, "incrY":195, "rows":3, "cols":4, "scaleX":1, "scaleY":1 },
+            "labelTemplate": {"id":"Locked", "x":0, "y":0, "font":"23px PosterCopy", "fill":"white", "textAlign":"center",
+                "textBaseline":"top", "offsetY":76 },
+            "detailArrow": {"id":"awardsPopupArrow", "x":128, "y":0, "regX":0.5, "regY":0, "width":-1, "height":-1, "offset":50 },
+            "detailBkgd": {"id":"awardsPopup", "x":0, "y":35, "regX":0, "regY":0, "width":-1, "height":-1 },
+            "detailTitle": {"id":"Award Name", "x":128, "y":52, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+            "descText": {"id":"Award Description", "x":0, "y":40, "font":"20px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" }
+        }
+    }
+}
+

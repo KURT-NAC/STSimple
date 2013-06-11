@@ -1,0 +1,94 @@
+{
+    "login":
+    {
+        "id" : "Login",
+        "elements":
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":95, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title":      {"id":"Login", "x":384, "y":105, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":200, "width":-1, "height":-1 },
+            "titleSub1":  {"id":"Choose How You Would", "x":384, "y":225, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "titleSub2":  {"id":"Like To Login", "x":384, "y":245, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "starburst1": {"id":"loginStarburst", "x":0, "y":287, "width":-1, "height":-1 },
+            "starburst2": {"id":"loginStarburst", "x":0, "y":592, "width":-1, "height":-1 },
+            "break2": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "break3": {"id":"footerBreak", "x":0, "y":592, "width":-1, "height":-1 },
+            "facebook":   {"id":"fancyButton", "x":384, "y":450, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "orientation":"horizontal", "mainTextPos":285, "font":"28px PosterCopy", "adjust":12,
+                "textStyle":{ "align":"center", "baseline":"middle", "fill":"white"},
+                "config":{ "buttonImage":"loginButton", "normalIdx":0, "pressIdx":1, "text":"Login\nWith Facebook"},
+                "addImages":[
+                    {"id":"bigFacebook", "pos":120, "centered":true, "adjust":-40 }
+                ]},
+            "email":   {"id":"fancyButton", "x":384, "y":750, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "orientation":"horizontal", "mainTextPos":285, "font":"28px PosterCopy", "adjust":12,
+                "textStyle":{ "align":"center", "baseline":"middle", "fill":"white"},
+                "config":{ "buttonImage":"loginButton", "normalIdx":0, "pressIdx":1, "text":"Login\nWith Email"},
+                "addImages":[
+                    {"id":"bigEmail", "pos":120, "centered":true, "adjust":-40 }
+                ]}
+        }
+    },
+
+    "emailLogin":
+    {
+        "id" : "Email Login",
+        "elements" :
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Login", "x":384, "y":125, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "titleSub1": {"id":"By Email", "x":384, "y":185, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "name":   {"id":"name", "type":"textFieldObject", "x":384, "y":480, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "passwd": {"id":"passwd", "type":"textFieldObject", "x":384, "y":585, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "loginBtn":   {"id":"loginBtn", "type":"navigationButton", "x":384, "y":700, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Login", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}},
+            "createBtn":   {"id":"createBtn", "type":"navigationButton", "x":384, "y":365, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Create Account", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}},
+            "resetPasswdBtn":   {"id":"resetPasswdBtn", "type":"navigationButton", "x":384, "y":800, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Forgot", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}}
+        }
+    },
+
+    "emailCreate":
+    {
+        "id" : "Email Create",
+        "elements" :
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Create Account", "x":384, "y":125, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "name":   {"id":"name", "type":"textFieldObject", "x":384, "y":340, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "email": {"id":"email", "type":"textFieldObject", "x":384, "y":425, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "passwd1": {"id":"passwd1", "type":"textFieldObject", "x":384, "y":510, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "passwd2": {"id":"passwd2", "type":"textFieldObject", "x":384, "y":595, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "createBtn":   {"id":"createBtn", "type":"navigationButton", "x":384, "y":845, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Create Account", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}},
+            "descLink1": {"id": "By clicking 'Create account' you are", "x":384, "y":640, "font":"30px PosterCopy", "outline":"true", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "descLink2": {"id": "indicating that you have read and agree", "x":384, "y":670, "font":"30px PosterCopy", "outline":"true", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "descLink3": {"id": "to the privacy policy and terms of service", "x":384, "y":700, "font":"30px PosterCopy", "outline":"true", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "descLink4": {"id": "(click yellow links below to view)", "x":384, "y":730, "font":"30px PosterCopy", "outline":"true", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "termsLink": {"id": "termsLink", "x":192, "y":770, "font":"30px PosterCopy", "outline":"true", "fill":"yellow", "textAlign":"center", "textBaseline":"top" },
+            "policyLink": {"id": "policyLink", "x":576, "y":770, "font":"30px PosterCopy", "outline":"true", "fill":"yellow", "textAlign":"center", "textBaseline":"top" }
+        }
+    },
+
+    "emailPasswdReset":
+    {
+        "id" : "Password Reset",
+        "elements" :
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Reset Password", "x":384, "y":125, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "email": {"id":"email", "type":"textFieldObject", "x":384, "y":480, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "submitBtn":   {"id":"submitBtn", "type":"navigationButton", "x":384, "y":625, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Submit", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}}
+        }
+    }
+}
+

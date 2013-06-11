@@ -1,0 +1,16 @@
+{
+    "awardPopup":
+    {
+        "id": "Award Popup",
+        "elements":
+        {
+            "drop": {"id":"blackSquare", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":768, "height":1024, "alpha":0.75 },
+            "bg": {"id":"awardPopupBkgd", "x":384, "y":510, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "award": {"id":"blackSquare", "x":380, "y":530, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "title": {"id":"Award Name", "x":380, "y":677, "font":"50px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" },
+            "descText": {"id":"Award Description", "x":0, "y":263, "font":"28px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"middle" },
+            "closeBtn":   {"id":"fancyButton", "x":660, "y":325, "regX":0.5, "regY":0.5, "width":-1, "height":-1,
+                "config":{ "buttonImage":"closeBtn", "normalIdx":0, "pressIdx":1, "text":""}}
+        }
+    }
+}

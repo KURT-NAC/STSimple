@@ -1,0 +1,65 @@
+{
+    "shop":
+    {
+        "id": "Shop",
+        "elements":
+        {
+            "bg":          {"id":"background", "x":384, "y":0, "regX":0.5, "width":768, "height":1024 },
+            "break":        {"id":"footerBreak", "x":0, "y":224, "width":-1, "height":-1 },
+            "scroll":      {"id":"scroll",   "x":0, "y":228,  "width":768,  "height":670 },
+            "storeBanner": {"id":"bannerLarge", "x":384, "y":111, "regX":0.5, "width":-1,  "height":-1 },
+            "storeTitle":  {"id":"Store", "x":360, "y":120, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "storeItemTitle": {"id":"Item", "x":384, "y":123, "font":"32px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "storeCoin":   {"id":"coinIco", "x":455, "y":145, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+
+
+            "btnFrontPlain":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"28px PosterCopy",
+                "config":{"backgroundImg":"storeItemBG", "buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Name"},
+                "addImages":[
+                    {"id":"coinIco", "pos":155, "centered":true},
+                    {"id":"halfMoonAdd", "pos":205, "centered":false}
+                ]},
+            "btnFrontCount":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"28px PosterCopy",
+                "config":{"backgroundImg":"storeItemBG", "buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Name"},
+                "addImages":[
+                    {"id":"coinIco", "pos":155, "centered":true},
+                    {"id":"halfMoonAdd", "pos":205, "centered":false},
+                    {"id":"itemCircle", "pos":625, "centered":true}
+                ],
+                "addText":[
+                    {"id":"You\nOwn", "pos":575, "font":"24px PosterCopy", "fill":"white", "align":"center" },
+                    {"id":"#", "pos":623, "font":"24px PosterCopy", "fill":"white", "align":"center" }
+                ]},
+            "btnFrontMoney":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"28px PosterCopy",
+                "config":{"backgroundImg":"storeItemBG", "buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Name"},
+                "addImages":[
+                    {"id":"coinIco", "pos":155, "centered":true},
+                    {"id":"halfMoonAdd", "pos":205, "centered":false}
+                ],
+                "addText":[
+                    {"id":"You Own\n#", "pos":593, "font":"24px PosterCopy", "fill":"white", "align":"center" }
+                ]},
+            "btnItem":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"28px PosterCopy", "mainTextPos":420,
+                "config":{"backgroundImg":"storeItemBG", "buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Name"},
+                "addImages":[
+                    {"id":"coinIco", "pos":155, "centered":true},
+                    {"id":"halfMoonAdd", "pos":205, "centered":false},
+                    {"id":"coinIco", "pos":630, "centered":true}
+                ],
+                "addText":[
+                    {"id":"X#", "pos":290, "font":"48px PosterCopy", "fill":"white", "align":"center" },
+                    {"id":"###", "pos":575, "font":"28px PosterCopy", "fill":"white", "align":"center" }
+                ]},
+            "btnMoney":   {"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"24px PosterCopy", "mainTextPos":420,
+                "config":{"backgroundImg":"storeItemBG", "buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Name"},
+                "addImages":[
+                    {"id":"coinIco", "pos":155, "centered":true},
+                    {"id":"halfMoonAdd", "pos":205, "centered":false}
+                ],
+                "addText":[
+                    {"id":"#", "pos":300, "font":"48px PosterCopy", "fill":"white", "align":"left" },
+                    {"id":"$#", "pos":595, "font":"28px PosterCopy", "fill":"white", "align":"center" }
+                ]}
+        }
+    }
+}

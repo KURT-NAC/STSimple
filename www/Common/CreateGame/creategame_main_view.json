@@ -1,0 +1,121 @@
+{
+    "createGame":
+    {
+        "id": "Create Game",
+        "elements":
+        {
+            "bg":       {"id":"BG",       "x":0, "y":200, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":80, "regX":0.5, "width":-1,  "height":-1 },
+            "title":      {"id":"Create Game", "x":384, "y":90, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "titleSub1":  {"id":"How Do You Want To", "x":384, "y":142, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "titleSub2":  {"id":"Find Your Opponent", "x":384, "y":167, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "facebook":   {"id":"fancyButton", "x":384, "y":230, "regX":0.5, "width":600, "height":-1, "orientation":"horizontal", "font":"32px PosterCopy",
+                "config":{"buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Facebook"},
+                "addImages":[
+                    {"id":"facebookIcon", "pos":85, "centered":true},
+                    {"id":"halfMoonAdd", "pos":131, "centered":false},
+                    {"id":"playIcon", "pos":490, "centered":false}
+                ]},
+            "username":   {"id":"fancyButton", "x":384, "y":395, "regX":0.5, "width":600, "height":-1, "orientation":"horizontal", "font":"32px PosterCopy",
+                "config":{"buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Username"},
+                "addImages":[
+                    {"id":"usernameIcon", "pos":85, "centered":true},
+                    {"id":"halfMoonAdd", "pos":131, "centered":false},
+                    {"id":"playIcon", "pos":490, "centered":false}
+                ]},
+            "email":   {"id":"fancyButton", "x":384, "y":560, "regX":0.5, "width":600, "height":-1, "orientation":"horizontal", "font":"32px PosterCopy",
+                "config":{"buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"E-Mail"},
+                "addImages":[
+                    {"id":"emailIcon", "pos":85, "centered":true},
+                    {"id":"halfMoonAdd", "pos":131, "centered":false},
+                    {"id":"playIcon", "pos":490, "centered":false}
+                ]},
+            "random":   {"id":"fancyButton", "x":384, "y":725, "regX":0.5, "width":600, "height":-1, "orientation":"horizontal", "font":"32px PosterCopy",
+                "config":{"buttonImage":"buttonType1Slice", "map":"typeOneMap", "text":"Random"},
+                "addImages":[
+                    {"id":"randomIcon", "pos":85, "centered":true},
+                    {"id":"halfMoonAdd", "pos":131, "centered":false},
+                    {"id":"playIcon", "pos":490, "centered":false}
+                ]},
+            "scroll":   {"id":"scroll",   "x":0, "y":160,  "width":768,  "height":730 },
+            "fbBanner": {"id":"banner", "x":384, "y":80, "regX":0.5, "width":-1,  "height":-1 },
+            "fbTitle":  {"id":"Facebook Friends", "x":384, "y":100, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break":    {"id":"footerBreak", "x":0, "y":155, "width":-1, "height":-1 }
+        }
+    },
+
+    "template_FacebookButton":
+    {
+        "id":"Facebook Button",
+        "elements":
+        {
+            "autoButton":{"id":"fancyButton", "x":0, "y":0, "width":-1, "height":-1, "orientation":"horizontal", "font":"32px PosterCopy", "mainTextPos":363,
+                "config":{"backgroundImg":"darkStrip", "buttonImage":"buttonType1Slice", "map":"typeOneMap" },
+                "addImages":[
+                    {"id":"thumbFrame", "pos":160, "centered":true},
+                    {"id":"thumbDefaultSmall", "pos":160, "centered":true},
+                    {"id":"playIcon", "pos":585, "centered":false}
+                ]},
+            "awardIconBg": {"id":"awardIconBkgdSml", "x":130, "y":0, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "awardIcon": {"id":"awardsPlaceholder", "x":130, "y":0, "regX":0.5, "regY":0.5, "width":32, "height":40 }
+        }
+    },
+
+    "createGameUsername":
+    {
+        "id":"Create Game Username",
+        "elements":
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Enter Username", "x":384, "y":125, "font":"36px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "name":   {"id":"username", "type":"textFieldObject", "x":384, "y":475, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "findBtn":   {"id":"findBtn", "type":"navigationButton", "x":384, "y":600, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Start Game", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}}
+        }
+    },
+
+    "createGameEmail":
+    {
+        "id":"Create Game Email",
+        "elements":
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Enter Email", "x":384, "y":125, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+            "name":   {"id":"email", "type":"textFieldObject", "x":384, "y":475, "regX":0.5, "regY":0.5, "width":-1,  "height":-1 },
+            "findBtn":   {"id":"findBtn", "type":"navigationButton", "x":384, "y":600, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Start Game", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}}
+        }
+    },
+
+    "inviteGameEmail":
+    {
+        "id":"Invite Game Email",
+        "elements":
+        {
+            "titleBG": {"id":"topDarkener", "x":0, "y":60, "width":-1,  "height":-1 },
+            "titleBanner": {"id":"bannerLarge", "x":384, "y":115, "regX":0.5, "regY":0.0, "width":-1,  "height":-1 },
+            "title": {"id":"Invite By Email", "x":384, "y":125, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "break1": {"id":"footerBreak", "x":0, "y":287, "width":-1, "height":-1 },
+
+            "email": {"id":"email", "type":"text", "text": "foo@bar.com", "x":384, "y":380, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "explain1": {"id":"explain1", "type":"text", "text": "Email address was not found.", "x":384, "y":450, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "explain2": {"id":"explain2", "type":"text", "text": "Invite your friend to play.", "x":384, "y":505, "font":"42px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"top" },
+            "inviteBtn":   {"id":"inviteBtn", "type":"navigationButton", "x":384, "y":615, "regX":0.5, "regY":0.5, "width":400, "height":-1, "text":"Invite", "orientation":"vertical",
+                "decoration": {"element":{"textPos":25}}}
+        }
+    },
+
+    "inviteEmailCopy" :
+    {
+        "id": "Email Copy",
+        "elements" :
+        {
+            "subject": {"text": "Play %GAME% with me!"},
+            "body":{ "text": "I'm playing %GAME% and you should join me.  It's a lot of fun"}
+        }
+    }
+}

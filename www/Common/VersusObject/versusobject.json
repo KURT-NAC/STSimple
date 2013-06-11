@@ -1,0 +1,20 @@
+{
+    "versusObject":
+    {
+        "id": "Versus Object",
+        "elements":
+        {
+            "userBkgd1":{"id":"thumbBlack", "x":105, "y":105, "regX":0.5, "regY":0.5, "width":-1,  "height":-1},
+            "userPort1":{"id":"thumbDefault", "x":105, "y":105, "regX":0.5, "regY":0.5, "width":-1,  "height":-1},
+            "awardBg1": {"id":"awardIconBkgd", "x":5, "y":105, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "award1":{"id":"awardsPlaceholder", "x":5, "y":105, "regX":0.5, "regY":0.5, "width":92,  "height":115},
+            "userName1":{"id":"username1", "x":105, "y":237, "width":-1, "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center"},
+            "userBkgd2":{"id":"thumbBlack", "x":400, "y":105, "regX":0.5, "regY":0.5, "width":-1,  "height":-1},
+            "userPort2":{"id":"thumbDefault", "x":400, "y":105, "regX":0.5, "regY":0.5, "width":-1,  "height":-1},
+            "awardBg2": {"id":"awardIconBkgd", "x":505, "y":105, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "award2":{"id":"awardsPlaceholder", "x":505, "y":105, "regX":0.5, "regY":0.5, "width":92,  "height":115},
+            "userName2":{"id":"username2", "x":400, "y":237, "width":-1, "height":-1, "font":"24px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center"},
+            "userAndBanner":{"id":"andBanner", "x":255, "y":110, "width":-1, "height":-1, "regX":0.5, "regY":0.5 }
+        }
+    }
+}

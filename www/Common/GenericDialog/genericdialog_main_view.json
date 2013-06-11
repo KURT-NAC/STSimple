@@ -1,0 +1,19 @@
+{
+    "genericDialog":
+    {
+        "id": "Generic Dialog",
+        "elements":
+        {
+            "drop": {"id":"blackSquare", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1, "alpha":0.75 },
+            "bg": {"id":"dialogBG", "x":384, "y":512, "regX":0.5, "regY":0.5, "width":-1, "height":-1 },
+            "title": {"id":"Title", "x":384, "y":460, "font":"48px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" },
+            "text": {"id":"Text", "x":0, "y":0, "font":"28px PosterCopy", "fill":"white", "textAlign":"center", "textBaseline":"center" },
+            "okBtn": {"id":"navigationButton", "x":520, "y":725, "regX":0.5, "regY":0.5, "width":240, "height":-1, "text":"Ok",
+                "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                "decoration": {"iconName":"checkbox", "element":{"textPos":90, "iconPos":170}}},
+            "cancelBtn": {"id":"navigationButton", "x":248, "y":725, "regX":0.5, "regY":0.5, "width":240, "height":-1, "text":"Cancel",
+                "font":"24px PosterCopy", "orientation":"horizontal", "adjust":0,
+                "decoration": {"iconName":"noIcon", "element":{"textPos":90, "iconPos":170}}}
+        }
+    }
+}

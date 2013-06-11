@@ -1,0 +1,40 @@
+@font-face
+{
+    font-family: PosterCopy;
+    src: url('./assets/fonts/HVD Poster copy.ttf');
+}
+
+@font-face
+{
+    font-family: "ArialNarrowBold";
+    src: url('./assets/fonts/Arial Narrow Bold.ttf');
+}
+
+#canvasHolder
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: PosterCopy, serif;
+}
+
+#loadingCanvas
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: PosterCopy, serif;
+}
+
+#storeCanvasHolder
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: PosterCopy, serif;
+}
+
+canvas
+{
+    -webkit-transform: translate3d(0px,0px,0px);
+}

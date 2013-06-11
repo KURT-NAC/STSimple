@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PuzzlePix</title>
+
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="puzzlepix.css">
+
+		<!-- Common libraries -->
+		<script type="text/javascript" src="Common/require.js"></script>
+        <script type="text/javascript" src="Common/async.js"></script>
+        <script type="text/javascript" src="Common/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="Common/ErrorCode.js"></script>
+
+        
+        <!-- Cordova -->
+        <script type="text/javascript" src="cordova-2.7.0.js"></script>
+        <script type="text/javascript" src="cdv-plugin-fb-connect.js"></script>
+        <script type="text/javascript" src="facebook_js_sdk.js"></script>
+        <script type="text/javascript" src="Common/InAppPurchaseManager.js"></script>
+        <script type="text/javascript" src="Common/PushNotification.js"></script>
+
+
+		<!-- CAAT -->
+		<script type="text/javascript" src="caat.js"></script>
+        <script type="text/javascript" src="Common/caatUtils.js"></script>
+        <script type="text/javascript" src="Common/GameDirector.js"></script>
+
+        <!-- S&T Platform -->
+        <script type="text/javascript" src="Common/gameWidgets.js"></script>
+        <script type="text/javascript" src="Common/ErrorHandler.js"></script>
+        <script type="text/javascript" src="Common/CanvasHelper.js"></script>
+        <script type="text/javascript" src="Common/FSM.js"></script>
+        <script type="text/javascript" src="Common/FSceneM.js"></script>
+        <script type="text/javascript" src="Common/Loader.js"></script>
+        <script type="text/javascript" src="Common/ClientConnection.js"></script>
+        <script type="text/javascript" src="Common/ScrollView.js"></script>
+        <script type="text/javascript" src="Common/PageView.js"></script>
+        <script type="text/javascript" src="Common/ScrollViewFactory.js"></script>
+        <script type="text/javascript" src="Common/ThreeSliceActor.js"></script>
+        <script type="text/javascript" src="Common/FancyButton.js"></script>
+        <script type="text/javascript" src="Common/NavigationButton.js"></script>
+        <script type="text/javascript" src="Common/ToggleButton.js"></script>
+        <script type="text/javascript" src="Common/RadioGroup.js"></script>
+        <script type="text/javascript" src="Common/ClippedImage.js"></script>
+        <script type="text/javascript" src="Common/ProgressBar.js"></script>
+        <script type="text/javascript" src="Common/LoadingDialog.js"></script>
+        <script type="text/javascript" src="Common/LayoutManager.js"></script>
+        <script type="text/javascript" src="Common/TextBreaker.js"></script>
+        <script type="text/javascript" src="Common/FBProfilePicGetter.js"></script>
+        <script type="text/javascript" src="Common/FeedbackObject/FeedbackObject.js"></script>
+        <script type="text/javascript" src="Common/TextFieldObject/TextFieldObject.js"></script>
+        <script type="text/javascript" src="Common/SocialObject/SocialObject.js"></script>
+        <script type="text/javascript" src="Common/TimerActor.js"></script>
+        <script type="text/javascript" src="Common/Inventory.js"></script>
+        <script type="text/javascript" src="Common/AudioManager.js"></script>
+        <script type="text/javascript" src="Common/Game.js"></script>
+
+        <!-- Common pages -->
+        <script type="text/javascript" src="Common/TopBar/TopBar.js"></script>
+        <script type="text/javascript" src="Common/Turn/Turn.js"></script>
+        <script type="text/javascript" src="Common/LoginPage/LoginPage.js"></script>
+        <script type="text/javascript" src="Common/LoginPage/EmailLoginPage.js"></script>
+        <script type="text/javascript" src="Common/LoginPage/EmailCreatePage.js"></script>
+        <script type="text/javascript" src="Common/ActiveGames/ActiveGames.js"></script>
+        <script type="text/javascript" src="Common/CreateGame/CreateGame.js"></script>
+        <script type="text/javascript" src="Common/CreateGame/CreateGameFacebook.js"></script>
+        <script type="text/javascript" src="Common/CreateGame/CreateGameUsername.js"></script>
+        <script type="text/javascript" src="Common/CreateGame/CreateGameEmail.js"></script>
+        <script type="text/javascript" src="Common/Intro/Intro.js"></script>
+        <script type="text/javascript" src="Common/Shop/Store.js"></script>
+        <script type="text/javascript" src="Common/Shop/Shop.js"></script>
+        <script type="text/javascript" src="Common/GenericDialog/GenericDialog.js"></script>
+        <script type="text/javascript" src="Common/SettingsDialog/SettingsDialog.js"></script>
+        <script type="text/javascript" src="Common/DailyRewards/DailyRewards.js"></script>
+        <script type="text/javascript" src="Common/AwardsScreen/AwardsScreen.js"></script>
+        <script type="text/javascript" src="Common/AwardPopup/AwardPopup.js"></script>
+
+        <!-- Jigsaw -->
+        <script type="text/javascript" src="ScrollViewHack.js"></script>
+        <script type="text/javascript" src="Jigsaw.js"></script>
+
+        <!-- Main Game -->
+        <script type="text/javascript" src="PuzzleClientConnection.js"></script>
+        <script type="text/javascript" src="ClipCritique.js"></script>
+        <script type="text/javascript" src="PuzzleSolve.js"></script>
+        <script type="text/javascript" src="PuzzleResults.js"></script>
+        <script type="text/javascript" src="RecordClip.js"></script>
+        <script type="text/javascript" src="PuzzleGame.js"></script>
+        <script type="text/javascript" src="PuzzleStore.js"></script>
+        <script type="text/javascript" src="PuzzleTopBar.js"></script>
+        <script type="text/javascript" src="SummaryPage.js"></script>
+        <script type="text/javascript" src="DifficultyPage.js"></script>
+        <script type="text/javascript" src="StockPhotos.js"></script>
+        <script type="text/javascript" src="SlidePuzzle.js"></script>
+        <script type="text/javascript" src="ChooseStock.js"></script>
+
+        <!-- bootstrap script -->
+        <script type="text/javascript">
+            window.onPhoneGap = true;
+            var sessionToken = '{{data.token}}';
+            $(document).ready( onBodyLoad );
+
+            function stopRKey(evt)
+            {
+                var evnt = (evt) ? evt : ((event) ? event : null);
+                var node = (evnt.target) ? evnt.target : ((evnt.srcElement) ? evnt.srcElement : null);
+
+                if ((evnt.keyCode == 13) && (node.type=="text"))
+                    return false;
+            }
+
+            document.onkeypress = stopRKey;
+        </script>
+	</head>
+
+	<body>
+		<div id="fb-root"></div>
+        <div id="canvasHolder" class="canvasHolder">
+            <canvas id="backgroundCanvas"></canvas>
+            <div id="mainCanvasHolder">
+                <canvas id="mainCanvas"></canvas>
+            </div>
+            <div id="storeCanvasHolder" class="storeCanvasHolder">
+                <canvas id="storeCanvas"></canvas>
+            </div>
+            <canvas id="topCanvas"></canvas>
+            <canvas id="dailyRewardsCanvas"></canvas>
+            <canvas id="awardPopupCanvas"></canvas>
+            <canvas id="settingsDialogCanvas"></canvas>
+            <canvas id="genericDialogCanvas"></canvas>
+            <canvas id="loadingCanvas"></canvas>
+        </div>
+    </body>
+</html>

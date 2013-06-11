@@ -1,0 +1,21 @@
+{
+    "turnButton":
+    {
+        "id": "Turn Button",
+        "elements":
+        {
+            "adjust": -10,
+            "turn": [
+                {"id":"turnButtonTurn", "pos":90 },
+                {"id":"turnButtonTurn", "pos":40 },
+                {"id":"turnButtonTurn", "pos":-10 }
+            ],
+            "go": {"id":"turnButtonGo", "pos":215 },
+            "numberImages": [
+                {"id":"numberSheetSmall", "pos":45 },
+                {"id":"numberSheetSmall", "pos":95 },
+                {"id":"numberSheetSmall", "pos":145 }
+            ]
+        }
+    }
+}
